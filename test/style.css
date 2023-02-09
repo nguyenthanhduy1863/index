@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    position: relative;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.card{
+    height: 400px;
+    width: 320px;
+    background-color: #272d40;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card__icon{
+    color: white;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.cart-icon{
+    float: right;
+}
+
+.card__image{
+    width: 80%;
+    margin: 35px auto 20px;
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: translateY(-90px) rotate(-40deg);
+}
+
+/* .card:hover .card__name,
+.card:hover .card__price{
+    transform: translateY(-70px);
+} */
+
+.card:hover .card__name{
+    transform: translate(-20px, -70px);
+}
+
+.card:hover .card__price{
+    transform: translate(-122px, -70px);
+}
+
+.card__name{
+    color: #bd925e;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__price{
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+.card__option{
+    margin: 200px 15px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card__option-size{
+    display: flex;
+    align-items: center;
+}
+
+.card__option-size h4{
+    color: white;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.card__option-size span{
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: #dadada;
+    margin: 0 5px;
+}
+
+.card__option-color{
+    margin: 10px 0;
+    display: flex;
+}
+
+.card__option-color h4{
+    color: white;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.card__option-color div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.yellow-color{
+    background-color: #bd925e;
+}
+
+.blue-color{
+    background-color: blue;
+}
+
+.black-color{
+    background-color: #000;
+}
+
+.card-button{
+    display: flex;
+}
+
+.card-button button{
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-cart-btn{
+    margin-left: 20px;
+}
+
+.card:hover .card__option{
+    visibility: visible;
+    transform: translateY(-235px);
+    opacity: 1;
+}

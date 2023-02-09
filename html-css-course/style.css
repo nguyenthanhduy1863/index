@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container div{
+    width: 100%;
+    margin: 10px;
+    height: 50px;
+}
+
+.card1{
+    background-color: red;
+}
+
+.card2{
+    background-color: blue;
+}
+
+.card3{
+    background-color: aqua;
+}
+
+.card4{
+    background-color: violet;
+}
+
+.card5{
+    background-color: orange;
+}
+
+.card6{
+    background-color: aquamarine;
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('./img/8186835-12784305.jpg') no-repeat center/cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: url('./img/8186835-12784305.jpg') no-repeat center/cover;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.search-header{
+    margin: 30px 20px;
+}
+
+.search-header input {
+    width: 100%;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.location{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.city{
+    margin-bottom: 5px;
+}
+
+.temperature{
+    border-radius: 15px;
+    height: 100px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.weather{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.climate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 20px 20px 50px;
+    line-height: 30px;
+}
+
+.climate-item i{
+    margin-left: 22px;
+}
+
